@@ -1,20 +1,33 @@
+# OS & System Files
 .DS_Store
+Thumbs.db
+
+# Python & Virtual Environments
 __pycache__/
-.vscode/
-.env
+*.pyc
 .venv/
 venv/
 
+# IDE Configuration
+.vscode/
+.idea/
+
+# Environment & Sensitive Keys
+.env
+.env.*
+!.env.example
+
+# Local Vector Databases & State
 qdrant_db/
 markdown_docs/
 parent_store/
-docs/
 
-notebooks/output.csv
-
+# Generated Data & Evaluation Artifacts
+output.csv
 ragas_*.csv
 rag_evaluation_*.csv
 rag_evaluation_*.png
+notebooks/output.csv
 notebooks/ragas_*.csv
 notebooks/rag_evaluation_*.csv
 notebooks/rag_evaluation_*.png
